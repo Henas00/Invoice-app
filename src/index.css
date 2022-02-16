@@ -1,0 +1,80 @@
+/* light */
+:root {
+    --body-bg: #f8f8fb;
+    --sidebar-bg: #373b53;
+    --form-bg: #ffffff;
+    --form-input-bg: #ffffff;
+    --form-input-border: #DFE3FA;
+
+    --btn-secondary-bg: #f9fafe;
+    --btn-secondary-hover: #dfe3fa;
+    --btn-secondary-text: #7e88c3;
+
+    --btn-tertiary-bg: #363b53;
+    --btn-tertiary-hover: #0c0e16;
+    --btn-tertiary-text: #888eb0;
+
+    --btn-quaternary-bg: #F9FAFE;
+    --btn-quaternary-hover: #DFE3FA;
+    --btn-quaternary-text: #7E88C3;
+
+    --invoice-item-bg: #ffffff;
+    --invoice-status-bg: rgba(55, 59, 83, 0.06);
+    --invoice-status-text: #373B53;
+
+    --invoice-table-bg: #f9fafe;
+    --invoice-table-footer-bg: #373b53;
+    --popup-bg: #ffffff;
+    --dropdown-bg: #ffffff;
+    --dropdown-shadow: rgba(72, 84, 159, 0.25);
+    --checkbox-bg: #dfe3fa;
+
+    --text-heading: #0C0E16;
+    --text-form-label: #7E88C3;
+    --text-link: #0c0e16;
+    --text-link-hover: #7e88c3;
+    --text-placeholder: rgba(12, 14, 22, .4);
+
+    --grey-status: rgba(55, 59, 83, 0.09);
+}
+
+[data-theme="dark"] {
+    --body-bg: #141625;
+    --sidebar-bg: #1e2139;
+    --form-bg: #141625;
+    --form-input-bg: #1e2139;
+    --form-input-border: #252945;
+
+    --btn-secondary-bg: #252945;
+    --btn-secondary-hover: #ffffff;
+    --btn-secondary-text: #dfe3fa;
+
+    --btn-tertiary-bg: #363b53;
+    --btn-tertiary-hover: #1e2139;
+    --btn-tertiary-text: #dfe3fa;
+
+    --btn-quaternary-bg: #252945;
+    --btn-quaternary-hover: #1e2139;
+    --btn-quaternary-text: #DFE3FA;
+
+    --invoice-item-bg: #1e2139;
+    --invoice-status-bg: rgba(223, 227, 250, .06);
+    --invoice-status-text: #dfe3fa;
+
+    --invoice-table-bg: #252945;
+    --invoice-table-footer-bg: #0C0e16;
+    
+    --popup-bg: #1e2139;
+    --dropdown-bg: #252945;
+    --dropdown-shadow: rgba(0, 0, 0, 0.25);
+    --checkbox-bg: #1e2139;
+
+    --text-heading: #ffffff;
+    --text-form-label: #dfe3fa;
+    --text-link: #ffffff;
+    --text-link-hover: #888eb0;
+    --text-placeholder: #ffffff;
+
+    --grey-status: rgba(223, 227, 250, 0.06);
+
+}

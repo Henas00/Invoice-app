@@ -1,0 +1,127 @@
+.overlayForm {
+  padding: 2rem 2rem 10rem 2rem;
+  background-color: var(--form-bg);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  width: 100%;
+  position: fixed;
+  z-index: 0;
+  top: 4rem;
+  overflow: scroll;
+}
+
+.btns {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 1rem;
+  background-color: var(--sidebar-bg);
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+
+.title {
+  color: var(--text-heading)
+}
+
+.overlayForm header {
+  grid-area: header;
+}
+
+.overlayForm main {
+  grid-area: main;
+  margin-top: 2rem;
+  overflow: auto;
+}
+
+
+.overlayForm footer {
+  background-color: var(--form-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  bottom: 0;
+
+}
+
+form {
+  display: grid;
+  gap: 2rem;
+}
+
+.btnQuaternary {
+  background-color: var(--btn-quaternary-bg);
+}
+
+.btnGap {
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .overlayForm {
+    padding: 2rem 2rem 4rem 2rem;
+
+    width: 80vw;
+    left: 0;
+  }
+
+  .btns {
+    width: unset;
+    position: unset;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 0;
+    justify-content: center;
+  }
+
+  .hide {
+    display: unset;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .overlayForm {
+    background-color: var(--form-bg);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      'header'
+      'main'
+      'footer';
+    height: 100vh;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    overflow: scroll;
+    padding: 2rem 2rem 0px 2rem;
+    width: 50%;
+    left: 4rem;
+  }
+
+  .btns {
+    width: unset;
+    position: unset;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 0;
+    justify-content: center;
+  }
+
+  .hide {
+    display: unset;
+  }
+
+}

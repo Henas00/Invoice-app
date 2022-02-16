@@ -1,0 +1,12 @@
+.list{
+width:100%;
+     display: grid;
+  grid-row-gap: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+  
+  .hide {
+    display: none;
+  }
+}

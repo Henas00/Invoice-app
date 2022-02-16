@@ -1,0 +1,54 @@
+button {
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 3rem;
+    font-family: "Spartan", sans-serif;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.btnQuaternary {
+    background-color: var(--btn-quaternary-bg);
+    color: var(--btn-quaternary-text)
+}
+
+.btnQuaternary:hover {
+    background-color: var(--btn-quaternary-hover)
+}
+
+.btnTertiary {
+    background-color: var(--btn-tertiary-bg);
+    color: var(--btn-tertiary-text)
+}
+
+.btnTertiary:hover {
+    background-color: var(--btn-tertiary-hover)
+}
+
+.btnTertiary {
+    background-color: var(--btn-tertiary-bg);
+    color: var(--btn-tertiary-text)
+}
+
+.btnTertiary:hover {
+    background-color: var(--btn-tertiary-hover)
+}
+
+.btnPrimary {
+    background-color: #7c5df8;
+    color: #fff;
+}
+
+.btnPrimary:hover {
+    background-color: #9277ff;
+
+}
+
+.btnDelete {
+    background: rgb(236, 87, 87);
+    color: #fff;
+}
+
+.btnDelete:hover {
+    background: hsl(0, 100%, 80%);
+}

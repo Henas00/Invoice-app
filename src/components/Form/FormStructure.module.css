@@ -1,0 +1,44 @@
+h3 {
+  padding: 10px 0;
+  font-size: 14px;
+  color: #7c5efa;
+
+}
+
+.gap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 1.5rem;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem 1rem;
+}
+
+.trash {
+  font-size: 2rem;
+  align-self: flex-end;
+  color: rgb(136, 142, 176);
+}
+
+.trash:hover {
+  color: #EC5757;
+}
+
+
+
+@media screen and (min-width: 480px) {
+  .formRow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    grid-gap: 0 20px;
+  }
+}

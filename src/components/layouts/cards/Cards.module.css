@@ -1,0 +1,117 @@
+.card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: .7fr 1fr 1fr 1fr 1fr 20px;
+    grid-template-areas: 'id payment clientname totalprice status arrow';
+    background-color: var(--invoice-item-bg);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    align-items: center;
+}
+
+.id {
+    grid-area: id;
+    font-size: 0.75rem;
+    color: var(--text-heading);
+    font-weight: 700;
+}
+
+.id span {
+    color: rgb(126, 136, 195);
+}
+
+.paymentDue {
+    grid-area: payment;
+    display: flex;
+    color: var(--text-form-label);
+    font-size: 0.75rem;
+}
+
+.clienName {
+    grid-area: clientname;
+    font-size: 0.75rem;
+    color: var(--text-form-label);
+}
+
+.amount {
+    grid-area: totalprice;
+    font-weight: bold;
+    color: var(--text-heading);
+    font-size: 1rem;
+}
+
+.status {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: status;
+}
+
+.arrowBtn {
+    grid-area: arrow;
+    color: #7d5ff5;
+    font-size: 1.3rem;
+    align-self: flex-end;
+}
+
+.btn {
+    color: #7d5ff5;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .card {
+        display: grid;
+        align-items: start;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas: 'id clientname''payment status''totalprice status';
+        justify-content: space-between;
+        padding: 1.2rem 1.2rem;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        grid-template-columns: unset;
+    }
+
+    .clienName {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .arrowBtn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .card {
+        display: grid;
+        align-items: start;
+        grid-template-rows: 2fr 1fr 2fr;
+        gap: 0.5rem;
+        grid-template-areas: 'id clientname''payment payment''totalprice totalprice''status status';
+        justify-content: space-between;
+        padding: 1.2rem 1.2rem;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        grid-template-columns: unset;
+    }
+
+    .clienName {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .arrowBtn {
+        display: none;
+    }
+
+    .status span {
+        justify-content: center;
+    }
+
+    .status {
+        display: unset;
+    }
+}

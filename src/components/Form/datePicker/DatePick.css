@@ -1,0 +1,17 @@
+.datePicker {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-form-label);
+    padding: 15px;
+    width: 100%;
+    height: 46px;
+    background-color: var(--form-input-bg);
+    border: 1px solid var(--form-input-border);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.datePicker:focus {
+    border: 1px solid #7c5efa;
+    outline: none;
+}

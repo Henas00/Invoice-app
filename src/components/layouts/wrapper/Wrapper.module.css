@@ -1,0 +1,24 @@
+.container {
+  height: 100vh;
+  /* width: 95vw; */
+  padding: 2rem 1.5rem;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 769px) {
+  .container {
+    width: 100vw;
+    padding: 4.5rem 3rem;
+    margin: 0 auto;
+    height: unset;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .container {
+    width: 70vw;
+    padding: 4.5rem 3rem;
+    margin: 0 auto;
+    height: unset;
+  }
+}

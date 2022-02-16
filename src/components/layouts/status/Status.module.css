@@ -1,0 +1,34 @@
+.status {
+    font-size: 0.75rem;
+    justify-content: end;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    border-radius: 0.4rem;
+    padding: 0.75rem 1.5rem;
+    color: var(--bg-color);
+}
+
+.circle {
+    background-color: var(--bg-color);
+    margin-right: 0.5rem;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.green {
+    --bg-color: rgba(51, 214, 159, 1);
+    background-color: rgba(51, 214, 159, 0.09);
+}
+
+.yellow {
+    --bg-color: rgba(255, 143, 0, 1);
+    background-color: rgba(255, 143, 0, 0.09);
+}
+
+.grey {
+    --bg-color: var(--text-heading);
+    background-color: var(--grey-status)
+}
