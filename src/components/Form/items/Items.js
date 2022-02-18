@@ -14,8 +14,8 @@ const Items = () => {
         return (
           <div className={styles.gap}>
             {items.map((item, index) => (
-              <div className={`${styles.formRow} ${styles.gap}`}>
-                <Item key={index} index={index} remove={remove} item={item} />
+              <div key={index} className={`${styles.formRow} ${styles.gap}`}>
+                <Item index={index} remove={remove} item={item} />
               </div>
             ))}
             <Buttons type="button" btnStyle="btnQuaternary" handleClick={() =>

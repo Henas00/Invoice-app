@@ -6,17 +6,19 @@ import InvoicePage from "../components/Invoice/InvoicePage";
 import Wrapper from "../components/layouts/wrapper/Wrapper";
 
 import DataContext from "../context/DataContext";
+import NotFound from "../components/layouts/NotFound";
 
 const InvoiceDetaile = () => {
   const { invoices, isEdit, setIseEdit } = useContext(DataContext);
   let { id } = useParams();
 
   const invoice = invoices.filter((invoice) => invoice.id === id);
-
   return (
     <>
       <Wrapper>
-        <InvoicePage id={id} setIseEdit={setIseEdit} />
+        {invoice.length ===0 ? <NotFound /> : 
+          <InvoicePage id={id} setIseEdit={setIseEdit} invoiceP={invoice} />
+        }
       </Wrapper>
       <div>
         {isEdit && (

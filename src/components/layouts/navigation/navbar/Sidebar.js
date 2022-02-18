@@ -3,11 +3,13 @@ import {
   MdNightlight,
   MdLightMode
 } from "react-icons/md";
+import { Link } from "react-router-dom";
 const Sidebar = (props) => {
 
   return (
     <nav className="sidebar">
-      <img className="sidebar-logo" src="/logo.png" alt="" />
+      <Link to="/">       <img className="sidebar-logo" src="/logo.png" alt="" />
+</Link>
       <div className="sidebar-toggle-btn" onClick={props.handleClick}>
         {props.theme === "dark" ? <  MdLightMode/> : <MdNightlight /> }
         </div>

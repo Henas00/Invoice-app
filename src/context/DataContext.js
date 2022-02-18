@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect } from "react";
-import { data } from "../data";
+import data from "../data.json";
 import { IconContext } from "react-icons";
 
 const DataContext = createContext({});
@@ -26,7 +26,7 @@ export const DataProvider = ({ children }) => {
       checked: false,
     },
   ]);
-
+  console.log(invoices)
   useEffect(() => {
     if (window.localStorage.invoices === undefined) {
       localStorage.setItem('invoices', JSON.stringify(invoices))

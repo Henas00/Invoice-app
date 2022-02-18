@@ -2,10 +2,10 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Sidebar from "./components/layouts/navigation/navbar/Sidebar";
 import Home from "./pages/Home";
 import InvoiceDetaile from "./pages/[InvoiceDetaile]";
-import { DataProvider } from './context/DataContext'
 import useLocalStorage from 'use-local-storage'
 
 import './App.css'
+import NotFound from "./components/layouts/NotFound";
 
 
 function App() {
@@ -19,17 +19,17 @@ function App() {
     setTheme(newTheme)
   }
   return (
-    <DataProvider>
-      <BrowserRouter>
-        <div className="App" data-theme={theme} >
-          <Sidebar theme={theme} handleClick={switchTheme} />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/:id" element={<InvoiceDetaile />} />
-          </Routes>
-        </div>
-      </BrowserRouter>
-    </DataProvider>
+    <div className="App" data-theme={theme} >
+      <Sidebar theme={theme} handleClick={switchTheme} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path=":id" element={<InvoiceDetaile />} />
+        <Route
+          path="*"
+          element={<NotFound />}
+        />
+      </Routes>
+    </div>
   );
 }
 

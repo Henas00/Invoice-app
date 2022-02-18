@@ -1,4 +1,4 @@
-export const data = [
+[
   {
     "id": "RT3080",
     "createdAt": "2021-08-18",
@@ -24,11 +24,11 @@ export const data = [
       {
         "name": "Brand Guidelines",
         "quantity": 1,
-        "price": 1800.9,
-        "total": 1800.9
+        "price": 1800.90,
+        "total": 1800.90
       }
     ],
-    "total": 1800.9
+    "total": 1800.90
   },
   {
     "id": "XM9141",
@@ -55,17 +55,17 @@ export const data = [
       {
         "name": "Banner Design",
         "quantity": 1,
-        "price": 156.0,
-        "total": 156.0
+        "price": 156.00,
+        "total": 156.00
       },
       {
         "name": "Email Design",
         "quantity": 2,
-        "price": 200.0,
-        "total": 400.0
+        "price": 200.00,
+        "total": 400.00
       }
     ],
-    "total": 556.0
+    "total": 556.00
   },
   {
     "id": "RG0314",
@@ -160,8 +160,8 @@ export const data = [
       {
         "name": "Brand Guidelines",
         "quantity": 1,
-        "price": 2500.0,
-        "total": 2500.0
+        "price": 2500.00,
+        "total": 2500.00
       }
     ],
     "total": 4032.33
@@ -227,5 +227,29 @@ export const data = [
       }
     ],
     "total": 3102.04
+  },
+  {
+    "id": "LK1948",
+    "createdAt": "2022-02-17",
+    "paymentDue": "2022-03-19",
+    "description": "",
+    "paymentTerms": "30",
+    "clientName": "",
+    "clientEmail": "",
+    "status": "draft",
+    "senderAddress": {
+      "street": "",
+      "city": "",
+      "postCode": "",
+      "country": ""
+    },
+    "clientAddress": {
+      "street": "",
+      "city": "",
+      "postCode": "",
+      "country": ""
+    },
+    "items": [],
+    "total": 0
   }
 ]

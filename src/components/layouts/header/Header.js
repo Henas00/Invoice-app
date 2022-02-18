@@ -31,7 +31,7 @@ const Header = ({ handleClick }) => {
 
   function ShowInvoiceNumber(data) {
     if (data.length === 0) {
-      return "There are no invoices";
+      return "";
     } else if (data.length === 1) {
       return "There is 1 invoice";
     } else {

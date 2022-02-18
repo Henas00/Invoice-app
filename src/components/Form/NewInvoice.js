@@ -58,6 +58,7 @@ const NewInvoice = (props) => {
   }
 
   function addDraft(values) {
+    console.log('çlickd')
     const newInvoice = {
       ...createInvoice("draft", values),
       id: generateUniqueId(invoices),
@@ -71,6 +72,7 @@ const NewInvoice = (props) => {
     updateInvoice(newInvoice, invoices, setInvoices);
     setIseEdit(false);
   }
+
 
   return (
     <div className={styles.overlayForm} ref={form}>
@@ -99,8 +101,8 @@ const NewInvoice = (props) => {
                   <>
                     <Buttons type="button" handleClick={discardForm} text="Discard" btnStyle="btnQuaternary" />
                     <div className={styles.btnGap}>
-                      <Buttons type="button" handleClick={() => addDraft(formik.values)} btnStyle="btnTertiary" ariaLabel="Save as Draft Functionality Button for New Invoice"><span className={styles.hide}>Save as </span>Draft</Buttons>
-                      <Buttons type="submit" btnStyle="btnPrimary" ariaLabel="Save Functionality Button For New Invoice">Save<span className={styles.hide}> &amp; Send</span></Buttons>
+                        <Buttons type="button" handleClick={() => addDraft(formik.values)} btnStyle="btnTertiary" ariaLabel="Save as Draft Functionality Button for New Invoice"><span className={styles.hide}>Save as </span>Draft</Buttons>
+                        <Buttons type="submit" btnStyle="btnPrimary" ariaLabel="Save Functionality Button For New Invoice">Save<span className={styles.hide}> &amp; Send</span></Buttons>
                     </div>
                   </>
                 )}
