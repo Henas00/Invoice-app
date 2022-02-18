@@ -21,16 +21,16 @@ li span:hover {
 
 
 .dropdown {
-  min-width: 60vw;
   display: flex;
   background: var(--dropdown-bg);
   flex-direction: column;
   gap: 1rem;
   border-radius: 8px;
-  padding: 2rem 1rem;
+  padding: 2rem 3rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .checked {
   background-color: rgb(124, 93, 250);
 }
+
